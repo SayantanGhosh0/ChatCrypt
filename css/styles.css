@@ -4319,8 +4319,9 @@ textarea.form-control-lg {
   margin-bottom: 0;
 }
 
-.card-text:last-child {
+.card-text {
   margin-bottom: 0;
+  font-weight: 300;
 }
 
 .card-link:hover {
