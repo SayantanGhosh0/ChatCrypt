@@ -106,7 +106,7 @@
                 <div class="card-body">
                   <h4 class="card-title">Sayantan Ghosh</h4>
                   <p class="card-text">@sintancos</p>
-                  <a href="#" class="btn btn-dark">Send Message</a>
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@sintancos">Send Message</button>
                 </div>
               </div>
 
@@ -116,7 +116,7 @@
                 <div class="card-body">
                   <h4 class="card-title">Anurag Verma</h4>
                   <p class="card-text">@anu0608</p>
-                  <a href="#" class="btn btn-dark">Send Message</a>
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@anu0608">Send Message</button>
                 </div>
               </div>
               <br />
@@ -124,7 +124,7 @@
                 <div class="card-body">
                   <h4 class="card-title">Khush Dassani</h4>
                   <p class="card-text">@dassanikhush</p>
-                  <a href="#" class="btn btn-dark">Send Message</a>
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@dassanikhush">Send Message</button>
                 </div>
               </div>
 
@@ -134,11 +134,39 @@
                 <div class="card-body">
                   <h4 class="card-title">Syamantak Ghosh</h4>
                   <p class="card-text">@samghosh</p>
-                  <a href="#" class="btn btn-dark">Send Message</a>
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@samghosh">Send Message</button>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Recipient:</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Message:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-dark">Send message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </main>
         <footer class="py-4 bg-light mt-auto">
           <div class="container-fluid px-4">
